@@ -128,17 +128,20 @@
         <div class="project">
             <h3>GPU-Accelerated Active Nematic Simulations </h3>
             <ul style="list-style-type: square;">
-                  <li> Systems of living organism are typically active - energy is consistently injected into the system through the conversion of chemical energy from 
+                  <li> Systems of living organisms are typically active. That is, energy is consistently injected into the system through the conversion of chemical energy from 
                 injested food to mechanical energy. Due to this constant energy transformations, active systems are out of thermodynamic equilibrium. Interestingly, the 
-                the non-equilibrium state allows active systems to exhibit complex behavior and allows the systems to self-organize into structures that would not 
+                the non-equilibrium state allows active systems to exhibit complex behaviors; it allows the systems to self-organize into structures that would not 
                 be permitted in a system at equilibrium. </li>
                   <li> Nematic systems comprises of elongated entities whose assembly have a long-ranged
                 orientational order but no long-ranged translational order. This is another way of saying the entities have a preferred direction of alignment but lack 
                 a regular arrangement in space. </li>
-                  <li> An active nematic system, therefore, would be a colony or sheet of living rod-shaped bacteria, for example. Or imagine an aerial view of a herd of
-                      sheep navigating the obstacles in a small enclosure.</li>
+                  <li> An active nematic system, therefore, would be a colony or sheet of living rod-shaped bacteria, for example. What mechanism are at work in these systems?
+                      To answer this question, we create on the theoretical modeling of theses sytems through an open source tool: Open-Qmin.</li>
                   <li> My work on this aspect has focused on parallelizing the computation, using CUDA, for the 2D implementation of the agent-based modeling of these 
-                      systems in <a href="https://github.com/sussmanLab/open-Qmin/tree/master">Open-Qmin</a>.</li>
+                      systems in <a href="https://github.com/sussmanLab/open-Qmin/tree/master">Open-Qmin</a>. We focus on how these systems, in 2D, interact with boundaries.
+                      Imagine an aerial view of a herd of sheep, or a sheet of rod-shaped bacteria, navigating the obstacles in a small enclosure. The video below shows the 
+                      nematic director field, velocity field, and pressure field of a modeled active nematic system in a 64x64 finite difference grid (obstacles are not 
+                      shown).</li>
             </ul>
             <video controls width="500">
                 <source src="zeta9000_withKink_1a.m4v" type="video/mp4">
