@@ -121,7 +121,7 @@
             <h3>Deep Learning for Predictive Modeling</h3>
             <p> Built transformer-based neural networks in PyTorch to predict dynamic systems from large-scale datasets, achieving a unified understanding 
                 of complex behaviors. Developed scalable C-Python pipelines for big data analysis, presented to 35+ attendees at APS 2024. 
-                Read moore in our <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication.</a></p>
+                Read more in our <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication.</a></p>
             <p><b>Image</b>: <img src="images/project1.jpg" alt="Deep Learning Project"></p>
         </div>
         
@@ -163,10 +163,15 @@
                 <li>In crytalline solids, it is relatively easy to predict failure sites. Particle rearrangements, which are precursors to material failure, are concentrated around
                     sites in which there is a deviation in the regular arrangements of the particles.</li>
                 <li>Due to the lack of regularity in the structure of particles in supercooled liquids, predicting failure sites in such a system is not trivial. Thus, the application of
-                    machine learning models in prediciting particle rearrangements (dynamics) from local structure in supercooled liquids.</li>
-                <li></li>
-            </ul>
-            <p><b>Image</b>: <img src="images/project3.jpg" alt="Statistical Failure Project"></p>
+                    machine learning models in predicting dynamics (i.e. particle rearrangements) from local structure in supercooled liquids.</li>
+                <li>My work in this project centered on implementing transformer-based neural networks, graph neural networks and a couple of traditional machine learning 
+                    models in a supervised learning approach to investigate the correlation between structure and dynamics, and a common physical interpretation from the models.
+                    The workflow was optimized to process large-scale datasets through C-Python pipelines.</li>
+            <figure>
+            <img src="images/MLcorrelation.png" alt="Machine learning in structure-dynamics">
+            <figcaption>Machine learning models, trained on structural descriptors or graphs with labels from molecular dynamics simulations, predict structural relaxation in unseen structures 
+                using techniques like SVC, GNNs, MLPs, CNNs etc., with colors indicating frozen (blue) or rearranging (red) particles. Figure borrrowed from <a href="https://www.nature.com/articles/s42254-024-00791-4">paper</a>.</figcaption>
+            </figure>
         </div>
         
     </section>
