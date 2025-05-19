@@ -120,20 +120,18 @@
         
         <div class="project">
             <h3>GPU-Accelerated Active Nematic Simulations </h3>
-            <p style="margin-top: 0;">Theoretical collaboration with John Hopkins University</p>
+            <p style="margin-top: 0;"><b>Theoretical collaboration with John Hopkins University</b></p>
             <ul style="list-style-type: square;">
-                  <li> Systems of living organisms are typically active. That is, energy is consistently injected into the system through the conversion of chemical energy from 
-                        injested food to mechanical energy. Due to these constant energy transformations, active systems are out of thermodynamic equilibrium. Interestingly, the 
-                        the non-equilibrium state allows active systems to exhibit complex behaviors: it allows the systems to self-organize into structures that would not 
-                        be permitted for a system at equilibrium. </li>
+                  <li> Active systems, such as living organisms, continuously convert chemical energy from ingested food into mechanical energy, maintaining a non-equilibrium state. 
+                      This non-equilibrium state enables self-organization into complex structures unattainable in equilibrium systems. </li>
                   <li> Nematic systems comprises of elongated entities whose assembly have a long-ranged
                         orientational order but no long-ranged translational order. This is another way of saying the entities have a preferred direction of alignment but lack 
                         a regular arrangement in space. </li>
                   <li> An active nematic system, therefore, would be a colony or sheet of living rod-shaped bacteria, for example. But, what mechanisms are at work in these systems?
-                        To answer this question, we theoretically model these sytems using an open source tool: 
+                        To answer this question, we theoretically model these systems using an open source tool: 
                         <a href="https://github.com/sussmanLab/open-Qmin/tree/master">Open-Qmin</a>.</li>
                   <li> My work on this aspect has focused on parallelizing the computation, using CUDA, for the 2D implementation of the agent-based modeling of these 
-                        systems in <a href="https://github.com/sussmanLab/open-Qmin/tree/master">Open-Qmin</a> and optimzing the workflow to support deep learning models. We focus on how these systems, in 2D, interact with boundaries.
+                        systems in <a href="https://github.com/sussmanLab/open-Qmin/tree/master">Open-Qmin</a>, and optimizing the workflow to support deep learning models. We focus on how these systems, in 2D, interact with boundaries.
                         Imagine an aerial view of a herd of sheep, or a sheet of rod-shaped bacteria, navigating the obstacles in a small enclosure.</li>
             </ul>
             <figure>
@@ -145,18 +143,19 @@
                 grid (with no obstacles).</figcaption>
             </figure>
         </div>
-        
+        <!-- Add 3 line breaks -->
+        <br><<br><br>
+            
         <div class="project">
             <h3>Machine Learning Structure-Dynamic Correlation in Supercooled Liquids</h3>
-            <p style="margin-top: 0;"> Independent computational study </p>
+            <p style="margin-top: 0;"><b> Independent computational study </b></p>
             <ul style="list-style-type: square;">
-                <li> If a system is cooled fast enough that crystalization is avoided at the freezing temperature, the system becomes a supercooled liquid.
-                    The system constituents do not have regular arrangements in space - they preserve the continuous translational symmetry in space like you see in ordinary liquids - yet, the
-                     supercooled liquid is rigid like crystalline solids.</li>
-                <li>In crytalline solids, it is relatively easy to predict failure sites. Particle rearrangements, which are precursors to material failure, are concentrated around
-                    sites in which there is a deviation in the regular arrangements of the particles.</li>
-                <li>Due to the lack of regularity in the structure of particles in supercooled liquids, predicting failure sites in such a system is not trivial. Thus, the application of
-                    machine learning models in predicting dynamics (i.e. particle rearrangements) from local structure in supercooled liquids.</li>
+                <li> When a system is cooled rapidly to avoid crystallization at the freezing temperature, it forms a supercooled liquid. Its particles lack regular spatial arrangements, 
+                    preserving continuous translational symmetry as in ordinary liquids, yet exhibit solid-like viscosity akin to crystalline solids.</li>
+                <li>In crystalline solids, predicting failure sites is straightforward due to their regular lattice structure, as particle rearrangements—precursors to material 
+                    failure — are concentrated around lattice defects.</li>
+                <li>The irregular particle structures in supercooled liquids make predicting sites of particle rearrangements non-trivial, necessitating supervised machine learning models to 
+                    accurately correlate local structure with dynamics.</li>
                 <li>My work in this project centered on implementing transformer-based neural networks, graph neural networks and a couple of traditional machine learning 
                     models in a supervised learning approach to investigate the correlation between structure and dynamics, and a common physical interpretation from the models.
                     The workflow was optimized to process large-scale datasets through C-Python pipelines.</li>
@@ -167,39 +166,42 @@
                 from <a href="https://www.nature.com/articles/s42254-024-00791-4">Nature reviews physics</a>.</figcaption>
             </figure>
         </div>
-
+        <!-- Add 3 line breaks -->
+        <br><<br><br>
         
         <div class="project">
             <h3>Transfer Learning for predicting glassy dynamics from fluid structure</h3>
-            <p>Computational study at Emory University</p>
+            <p><b>Computational study at Emory University</b></p>
             <ul style="list-style-type: square;">
                 <li>To predict particle rearrangement from structure in supercooled liquids, a <a href="https://www.nature.com/articles/nphys3644">study</a> used a Support Vector Classification (SVC) approach
                 to identify the energy cost required for rearrangement in a local structure.</li>
-                <li>This methodology, which gives important physical insight, however, requires balanced labeled dataset on the scale of ten thousands for training.
-                    These datasets are derived from deep in the supercooled phase and is computationally costly to attain.</li>
-                <li> In this project, my work centered on building a support vector classifier from a balanced labeled dataset derived from the liquid phase, which is easily accessible computationally. 
-                    We showed that this classifier predicts the same energy cost to rearrangements for the same local structure when compared with the classifier derived from a balanced labeled dataset
-                    derived from the supercooled phase.. This resulted in a <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication
+                <li>Although this machine learning methodology provides valuable physical insights, it requires balanced labeled datasets on the scale of tens of thousands, which are derived from the 
+                    deeply supercooled phase and are computationally costly to obtain.</li>
+                <li> In this project, I developed a support vector classifier using a balanced labeled dataset from the computationally accessible liquid phase, demonstrating that it predicts 
+                    energy barriers for particle rearrangements in local structures consistently with a classifier trained on a supercooled phase dataset. This resulted in a <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication
                     </a> in Physical Review Research.</li>
             </ul>
         </div>
-
+        <!-- Add 3 line breaks -->
+        <br><<br><br>
 
         <div class="project">
-            <h3>Statistical Modeling of Matrial Failure in Disordered Systems</h3>
-            <p> Computational study at Emory University</p>
+            <h3>Statistical Modeling of Material Failure in Disordered Systems</h3>
+            <p><b>Computational study at Emory University</b></p>
             <ul style="list-style-type: square">
                 <li>The isoconfigurational ensemble focuses on the statistical properties of a system's dynamics given a fixed structural arrangement. It aims to isolate the influence of structure on dynamics
                     by generating multiple dynamical trajectories from the same starting configuration.</li>
                 <li>By averaging over these trajectories, the method calculates statistical quantities (like probability of rearrangement) that describe the average dynamical behavior associated with that specific structure.</li>
                 <li>In the project, I used the isoconfigurational ensemble to identify the probability of rearrangement from local structure for disorderd systems.
-                This work influenced in the development of supervised machine learning and deep learning techniques for disordered systems.</li>            
+                This work contributed to the development of supervised machine learning, including deep learning, techniques for disordered systems.</li>            
             </ul>
-            
+
+            <!--
             <figure>
-            <img src="" alt="Transfer learning SVC">
+            <!img src="" alt="Transfer learning SVC">
             <figcaption>.</figcaption>
             </figure>
+            -->
         </div>
         
     </section>
