@@ -117,13 +117,6 @@
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Deep Learning for Predictive Modeling</h3>
-            <p> Built transformer-based neural networks in PyTorch to predict dynamic systems from large-scale datasets, achieving a unified understanding 
-                of complex behaviors. Developed scalable C-Python pipelines for big data analysis, presented to 35+ attendees at APS 2024. 
-                Read more in our <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication.</a></p>
-            <p><b>Image</b>: <img src="images/project1.jpg" alt="Deep Learning Project"></p>
-        </div>
         
         <div class="project">
             <h3>GPU-Accelerated Active Nematic Simulations </h3>
@@ -169,9 +162,37 @@
                     The workflow was optimized to process large-scale datasets through C-Python pipelines.</li>
             <figure>
             <img src="MLcorrelations.png" alt="Machine learning in structure-dynamics">
-            <figcaption>Machine learning models, trained on structural descriptors or graphs with labels from molecular dynamics simulations, predict structural relaxation in unseen structures 
+            <figcaption>Machine learning models, trained on structural descriptors or graphs with labels from molecular dynamics simulations, predict structural rearrangements in unseen structures 
                 using techniques like SVC, GNNs, MLPs, CNNs etc., with colors indicating frozen (blue) or rearranging (red) particles. Figure borrrowed 
                 from <a href="https://www.nature.com/articles/s42254-024-00791-4">Nature reviews physics</a>.</figcaption>
+            </figure>
+        </div>
+
+        
+        <div class="project">
+            <h3>Transfer Learning for predicting glassy dynamics from fluid structure</h3>
+            <p>Computational study at Emory University</p>
+            <ul style="list-style-type: square;">
+                <li>To predict particle rearrangement from structure in supercooled liquids, a <a href="https://www.nature.com/articles/nphys3644">study</a> used a Support Vector Classification (SVC) approach
+                to identify the energy cost required for rearrangement in a local structure.</li>
+                <li>This methodology, which gives important physical insight, however, requires balanced labeled dataset on the scale of ten thousands for training.
+                    These datasets are derived from deep in the supercooled phase and is computationally costly to attain.</li>
+                <li> In this project, my work centered on building a support vector classifier from balanced labeled dataset derived from the liquid pahse, which 
+                    is easily accessible computationally. We showed that this classifier predicts the same energy cost to rearrangements for the same local structure
+                    when compared with the classifier derived from balanced labeled dataset derived fromt he supercooled phase. This resulted in a <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication
+                        in Physical Review Research.</a></li>
+            </ul>
+        </div>
+
+
+        <div class="project">
+            <h3>Deep Learning for Predictive Modeling</h3>
+            <p> Built transformer-based neural networks in PyTorch to predict dynamic systems from large-scale datasets, achieving a unified understanding 
+                of complex behaviors. Developed scalable C-Python pipelines for big data analysis, presented to 35+ attendees at APS 2024. 
+                Read more in our <a href="https://doi.org/10.1103/PhysRevResearch.5.043112">publication.</a></p>
+            <figure>
+            <img src="MLcorrelations.png" alt="Transfer learning SVC">
+            <figcaption>.</figcaption>
             </figure>
         </div>
         
